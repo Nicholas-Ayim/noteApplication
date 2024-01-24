@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid black;
+  height: 100%;
+  gap: 1rem;
+}
+.notes-container > div {
+  padding-top: 0.3rem;
+}
+.add-notes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.delete-notes,
+.add-notes {
+  display: flex;
+  align-items: center;
+  padding-right: 0.3rem;
+}
