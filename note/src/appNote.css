@@ -6,13 +6,14 @@
 .notes-container {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  border: 1px solid black;
+  width: 80%;
+  /* border: 1px solid black; */
   height: 100%;
   gap: 1rem;
+  padding-top: 1rem;
 }
-.notes-container > div {
-  padding-top: 0.3rem;
+.notes-container > div:not(1) {
+  padding-top: 0.5rem;
 }
 .add-notes {
   display: flex;
@@ -22,12 +23,26 @@
 .notes {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
-
+.grey-bg {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background: #b2b2b2;
+  border-radius: 5px;
+}
+.eee-bg {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+  border-radius: 5px;
+}
 .title-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .delete-notes,
@@ -35,4 +50,7 @@
   display: flex;
   align-items: center;
   padding-right: 0.3rem;
+}
+.date-now {
+  padding-bottom: 1rem;
 }

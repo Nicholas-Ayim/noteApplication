@@ -4,3 +4,52 @@
   height: 100%;
   border: 1px solid black;
 }
+.textEditor-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.title-update {
+  text-indent: 1rem;
+  font-size: 18px;
+  accent-color: blue;
+  border: none;
+  outline: none;
+  text-indent: 1rem;
+}
+.text-field {
+  padding-top: 0.5rem;
+  height: 100vh;
+  width: 100%;
+  accent-color: blue;
+  border: none;
+  outline: none;
+  text-indent: 1rem;
+  background: #b2b2b2;
+  resize: none;
+}
+.text-field::before {
+  content: "|";
+  color: blue;
+  width: 3rem;
+  font-size: 24px;
+  font-weight: 500;
+  animation: insertion 0.5s infinite;
+}
+@keyframes insertion {
+  0% {
+    transform: scale(0.6);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.note-saved {
+  text-align: center;
+}

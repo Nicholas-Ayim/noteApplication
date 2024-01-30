@@ -3,7 +3,7 @@ export default function Links() {
   return (
     <>
       <Link to="/">Notes</Link>
-      <Link to="/editor">Editor</Link>
+      {/* <Link to="/editor">Editor</Link> */}
     </>
   );
 }
